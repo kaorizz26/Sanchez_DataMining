@@ -1,16 +1,16 @@
 mark <- 72
-grade <- ''
 
 if (mark >= 90 & mark <= 100) {
-  grade <- 'A'
+  print("Grade: A")
 } else if (mark >= 80 & mark <= 89) {
-  grade <- 'B'
+  print("Grade: B")
 } else if (mark >= 70 & mark <= 79) {
-  grade <- 'C' 
+  print("Grade: C") 
 } else if (mark >= 60 & mark <= 69) {
-  grade <- 'D'
+  print("Grade: D")
 } else if (mark < 60) {
-  grade <- 'F'
+  print("Grade: F")
+} else {
+  print("Grade is invalid.")
 }
 
-print(grade)
