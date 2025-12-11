@@ -26,6 +26,7 @@ tdm <- TermDocumentMatrix(corpus)
 m <- as.matrix(tdm)
 word_freqs <- sort(rowSums(m), decreasing = TRUE)
 df <- data.frame(word = names(word_freqs), freq = word_freqs)
+print("Top 10 Most Frequent Words")                                 
 head(df, 10)
 # Interpretation of the results:
 #   The most frequent words are office and need. 
